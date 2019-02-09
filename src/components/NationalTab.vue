@@ -141,14 +141,14 @@ export default {
       getEatdays: function() {
         let eatDays = 0;
         
-        if(this.getLeaveDate.getHours() <= 13 && utils.isWorkday(this.getLeaveDate)) {
-            if(!this.isSameDay || this.getReturnDate.getHours() >= 13) {
+        if(this.getLeaveDate.getHours() < 13 && utils.isWorkday(this.getLeaveDate)) {
+            if(!this.isSameDay || this.getReturnDate.getHours() > 13) {
                 eatDays++;
             }
         }
 
         if(!this.isSameDay) {
-            if(this.getReturnDate.getHours() >= 13 && utils.isWorkday(this.getReturnDate)) {
+            if(this.getReturnDate.getHours() > 13 && utils.isWorkday(this.getReturnDate)) {
                 eatDays++;
             }
 
