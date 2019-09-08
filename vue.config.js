@@ -1,5 +1,5 @@
 // vue.config.js
 module.exports = {
     // options...
-    publicPath: process.env.NODE_ENV === 'production' ? '/~up201704220/' : '/'
+    publicPath: process.env.NODE_ENV === 'production' ? '/AjC/' : '/'
 }  

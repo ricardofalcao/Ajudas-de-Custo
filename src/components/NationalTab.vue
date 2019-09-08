@@ -85,7 +85,7 @@ export default {
               return 0;
           }
 
-          return hour < 13 ? 0 : hour <= 20 ? 25 : 50;
+          return hour < 14 ? 0 : hour <= 20 ? 25 : 50;
       },
 
       getReturnPrice: function() {

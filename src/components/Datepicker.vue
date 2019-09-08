@@ -337,7 +337,7 @@ export default {
             
 
             return dateFormat
-                .replace(yearRE, match => date.getFullYear())
+                .replace(yearRE, date.getFullYear())
                 .replace(monthRE, match => paddNum(date.getMonth() + 1, match.length))
                 .replace(dayRE, match => paddNum(date.getDate(), match.length))
                 .replace(hoursRE, match => paddNum(date.getHours(), match.length))
